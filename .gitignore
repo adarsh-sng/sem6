@@ -1,0 +1,43 @@
+# === Java compiled files ===
+*.class
+
+# === C++ compiled files ===
+*.o
+*.out
+*.exe
+*.gch
+*.bin
+
+# === General compiled and temp files ===
+*.log
+*.tmp
+*.swp
+
+
+# === Document and presentation files ===
+*.pdf
+*.ppt
+*.pptx
+*.doc
+*.docx
+*.xls
+*.xlsx
+
+
+
+# === Include only code and markdown files ===
+# So ignore everything else and re-include only code/docs if needed
+# You can uncomment below to control what to keep
+
+!*.java
+!*.cpp
+!*.c
+!*.h
+!*.py
+!*.js
+!*.ts
+!*.md
+
+# === OS specific ===
+# macOS
+
