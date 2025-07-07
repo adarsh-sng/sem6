@@ -41,3 +41,5 @@
 # === OS specific ===
 # macOS
 
+.vscode/
+myenv/

@@ -1,5 +1,6 @@
 # Table of content.
 
+## <h1 style="color: red;"> 3 July 2025 (Day 1)</h1>
 
 ## some stuff about java
 * Java is platform independent because code compiles to bytecode, which runs on any system with a JVM.
@@ -102,4 +103,3 @@ public class InputConsole {
 
 ## Questions
 * what is stream in java that stuff returns.
-* 
