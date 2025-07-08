@@ -103,3 +103,17 @@ public class InputConsole {
 
 ## Questions
 * what is stream in java that stuff returns.
+
+
+## <h1 style='color :violet'>8 july 2024(Day3)</h1>
+
+* `String S =sc.next();` reads a single word (up to the next space).
+* `String S =sc.nextLine();` reads the entire line including spaces.
+* `next()` does not consume the newline character, while `nextLine()` does.
+* class vs object:
+    * A class is a blueprint for creating objects, defining properties and behaviors.
+    * An object is an instance of a class, containing actual data and state.
+* in `public static void main(String[] args)`:
+    *  what happens if we remove `static`?
+        * The `main` method must be static to be called by the JVM without creating an instance of the class.
+        
