@@ -117,3 +117,16 @@ public class InputConsole {
     *  what happens if we remove `static`?
         * The `main` method must be static to be called by the JVM without creating an instance of the class.
         
+
+## <h1 style='color :violet'>10 july 2024(Day3)</h1>
+### Time Complexity
+* we always consider the worst case.
+![alt text](utils/image-1.png)
+
+- `O(1)` - Constant time: The operation takes the same amount of time regardless of input size.
+* `O(n)` - Linear time: The operation time increases linearly with input size.
+* $O(2^n)$ - Exponential time: The operation time doubles with each additional input element.
+* $O(n^2)$ - Quadratic time: The operation time increases with the square of the input size.
+* `O(n!)` - Factorial time: The operation time grows factorially with input size, common in permutations.
+* `O(log n)` - Logarithmic time: The operation time increases logarithmically with input size.
+* `O(n log n)` - Linearithmic time: Common in efficient sorting algorithms like mergesort and heapsort.
