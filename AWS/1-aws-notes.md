@@ -87,3 +87,84 @@
         - Limited control
         - Complexity
         - Vendor lock-in
+
+
+## 11 July 2025 (Day 5)
+### EC2 (Elastic Compute Cloud)
+> **What are instances?** 
+
+EC2 provides scalable computing capacity in the AWS cloud. Instances are virtual servers for running applications.
+
+**Instance Types:**
+- General Purpose
+- Compute Optimized
+- Memory Optimized
+- Storage Optimized(low latency)
+- Accelerated Computing(graphics optimzed)
+- High Memory( high ram nitro optimized)
+
+**important points:**
+1. it provide scalable computing capacity in the AWS cloud.
+2. you can use amazon ec2 to launch as many or as few virtual servers as you need, configure security and networking, and manage storage.
+3. ec2 enables you to scale up and scale down the instances
+4. storage options - elastic block storage (EBS) and instance store.
+
+## Cloud Computing Architecture
+![alt text](utils/ccArch.png)
+
+### Components of Cloud Computing Architecture
+
+- **Front-end:**  
+    The interface that users interact with, such as web browsers or mobile apps.
+
+- **Back-end (Cloud Side):**  
+    The cloud infrastructure that powers applications and services.  
+    **Key components include:**
+    - Compute : virtual machines,container services
+    - Storage: object storage, block storage, database(eg RDS, DynamoDB)
+    - Networking:virtual networks(eg VPC), load balancer, DNS services(eg Route 53).
+    - Monitoring and management tools:AWS CloudWatch, AWS CloudTrail, AWS Config.
+    - Security: IAM, encryption, firewalls.
+
+- **cloud resources:**  
+    Hosted and managed by cloud service providers, such as AWS, Azure, or Google Cloud. these include:
+    - data centres: physical infrastructure.
+    - virtualization: hypervisors for resouce abstraction.
+    - Middleware: software that enables integration between application.
+
+4. **Networking:**  
+    The communication protocols and services that connect the front-end and back-end, enabling data transfer and interaction.
+
+5. **Cloud Storage:**
+## Note: AWS is also known as ~~Amazon elastic lab produce.~~
+
+## Hypervisor 
+> hypervisor is a software that creates and runs virtual machines. It allows multiple operating systems to run concurrently on a single physical machine by abstracting the hardware resources. it act as a intermeditary,managing and allocating host resources. 
+
+    - not clear(what sir was saying)
+
+-  **Type 1 Hypervisor (Bare Metal):** 
+    - runs directly on the host's hardware.
+    - provides better performance and efficiency.
+    - examples: VMware ESXi, Microsoft Hyper-V, Xen.
+-  **Type 2 Hypervisor (Hosted):**
+    - runs on top of a host operating system.
+    - less efficient than Type 1.
+    - examples: VMware Workstation, Oracle VirtualBox, Parallels Desktop. 
+
+> ### imp: elastic beanstalk, aws lambda, aws sage maker
+
+
+## aws global infrastructure
+- its global infra is designed to provide high availability, low latency, and fault tolerance.
+- this is acheived through-
+    - **Regions:**  
+        Geographical areas where AWS data centers are located. Each region is isolated from others to ensure fault tolerance.
+        - each region has 3 or more Availability Zones (AZs). can be upto 6
+    - **Availability Zones (AZs):**  
+        Multiple isolated locations within a region, designed to be independent of each other. Each AZ has its own power, cooling, and physical security.
+    - **Edge Locations:**  
+        Used for content delivery and caching, reducing latency for end users.
+
+#### Storage systems- 
+    - SAN/NAS - Storage Area Network (SAN) and Network Attached Storage (NAS) are two types of storage solutions used in cloud computing. SAN is a high-speed network that provides access to consolidated block-level storage, while NAS is a file-level storage solution that allows multiple users to access and share files over a network.
