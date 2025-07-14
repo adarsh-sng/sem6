@@ -168,3 +168,55 @@ EC2 provides scalable computing capacity in the AWS cloud. Instances are virtual
 
 #### Storage systems- 
     - SAN/NAS - Storage Area Network (SAN) and Network Attached Storage (NAS) are two types of storage solutions used in cloud computing. SAN is a high-speed network that provides access to consolidated block-level storage, while NAS is a file-level storage solution that allows multiple users to access and share files over a network.
+
+
+## 14 July 2025
+
+## AWS Cloud Practitioner
+- Walkthrough of Amazon EC2 instance creation
+  1. **Select an AMI** (Amazon Machine Image) that serves as a template for your instance.
+  2. **Instance Type:** Choose the hardware configuration for your instance, such as CPU, memory, and storage.
+     - Instance type categories include:
+       - General Purpose
+       - Compute Optimized
+       - Memory Optimized
+       - Storage Optimized
+       - Accelerated Computing
+     - Instance type naming
+       - Example: t2.micro
+         - T is the family name,
+         - 2 is the generation, and
+         - micro is the size.
+  3. **Network Settings**
+  4. **IAM Role**
+  5. **User Data**
+  6. **Storage Options**
+     - **Amazon Elastic Block Store (EBS):**
+       - Provides persistent block storage for EC2 instances
+       - Can be attached to an instance as a root volume or additional data volumes
+       - Supports snapshots for backup and recovery
+     - **Amazon EC2 Instance Store:**
+       - Provides temporary storage that is physically attached to the host machine
+       - Data is lost when the instance is stopped or terminated
+       - Suitable for temporary data or caching
+     - **Other options:**
+       - Amazon EFS (Elastic File System)
+       - Amazon Simple Storage Service (S3)
+  7. **Tags**
+  8. **Security Group**
+  9. **Key Pair**
+
+  ![instance](utils/instance.png)
+
+
+        ```
+        ┌───────────────┐          ┌───────────────┐          ┌───────────────┐
+        │               │          │               │          │               │
+        │    IAM Role   │ attached │  EC2 Instance │ accesses │   S3 Bucket   │
+        │  (permissions)│ ────────>│  (runs app)   │ ────────>│  (data store) │
+        │               │    to    │               │          │               │
+        └───────────────┘          └───────────────┘          └───────────────┘
+        ```
+
+
+  
