@@ -33,3 +33,9 @@ where:
 - \(\frac{\partial E}{\partial w}\) is the gradient of the loss
 function with respect to the weight
 - \(E\) is the loss function    
+
+## 16 jul 2025
+    For the given neural network find the output y. assume here you are working with binary sinouidal activation function.
+
+ 
+![alt text](asset/image.png)
